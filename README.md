@@ -881,10 +881,10 @@ pytest
 
 # 프론트엔드 테스트!
 
+
 cd frontend
 npm test
 ```
 [filmrecipe1](https://github.com/user-attachments/assets/cb2300fc-8f7c-4606-a0a6-6abca368e970)
-[Uploading filmrecipe3.gif…]()
-
+[filmrecipe2](https://github.com/user-attachments/assets/a18a1973-cd71-4429-b49d-e85df18d3193)
 
