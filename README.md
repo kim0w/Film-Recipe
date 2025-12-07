@@ -875,46 +875,16 @@ Body: images=[File]
 ### **테스트**
 
 ```bash
-# 백엔드 테스트
+# 백엔드 테스트!
 cd backend
 pytest
 
-# 프론트엔드 테스트
+# 프론트엔드 테스트!
+
 cd frontend
 npm test
 ```
+[filmrecipe1](https://github.com/user-attachments/assets/cb2300fc-8f7c-4606-a0a6-6abca368e970)
+[Uploading filmrecipe3.gif…]()
 
----
 
-## 📜 라이선스
-
-**MIT License**
-
-Copyright (c) 2025 Film Recipe Team
-
-본 프로젝트는 교육 및 연구 목적으로 제작되었습니다.
-
-**데이터 출처:**
-
-- 필름 데이터시트: © Fujifilm, Kodak (제조사 공식 문서)
-- 레퍼런스 이미지: Flickr / Unsplash (CC0 / CC BY)
-
----
-
-## 📞 문의
-
-- **GitHub Issues:** [프로젝트 이슈](https://github.com/your-username/filmrecipe/issues)
-- **이메일:** filmrecipe@example.com
-- **Discord:** [커뮤니티 참여](https://discord.gg/filmrecipe)
-
----
-
-## 🙏 감사의 말
-
-- **Fujifilm, Kodak** - 필름 데이터시트 제공
-- **colour-science** - 과학적 색공간 라이브러리
-- **Open Source Community** - 수많은 오픈소스 라이브러리
-
----
-
-**⭐ 이 프로젝트가 도움이 되셨다면 Star를 눌러주세요!**
