@@ -226,3 +226,263 @@ VALUES (
     'World finest grain B&W. T-GRAIN technology, extreme sharpness, high resolution.',
     TRUE
 );
+
+-- ============================================================
+-- Phase 2: Core Films (8개 필름 추가 → 총 13개)
+-- ============================================================
+
+-- 6. Kodak Ektachrome E100
+INSERT INTO films (name, manufacturer, type, iso_base, description, tier, pdf_analyzed)
+VALUES (
+    'Kodak Ektachrome E100',
+    'Kodak',
+    'color',
+    100,
+    'Vibrant color reversal film. Fine grain, neutral tones, excellent for scanning.',
+    'core',
+    FALSE
+);
+
+INSERT INTO film_recipes (
+    film_id, recipe_name, process_type,
+    iso_min, iso_max,
+    grain_size, grain_intensity,
+    color_temperature, white_balance,
+    tone_curve_data, spectral_dye_density, reciprocity_failure_data,
+    matching_reason, is_active
+)
+VALUES (
+    6,
+    'Standard E-6',
+    'E-6',
+    50, 200,
+    9, 0.28,
+    5500, 'daylight',
+    '{}', '{}', '{}',
+    'Vibrant colors with neutral tones. Excellent for landscape, portrait, and general photography.',
+    TRUE
+);
+
+-- 7. Kodak Gold 200
+INSERT INTO films (name, manufacturer, type, iso_base, description, tier, pdf_analyzed)
+VALUES (
+    'Kodak Gold 200',
+    'Kodak',
+    'color',
+    200,
+    'Consumer color negative film. Warm tones, ideal for everyday snapshots and travel.',
+    'core',
+    FALSE
+);
+
+INSERT INTO film_recipes (
+    film_id, recipe_name, process_type,
+    iso_min, iso_max,
+    grain_size, grain_intensity,
+    color_temperature, white_balance, base_mask_color,
+    tone_curve_data, spectral_dye_density, reciprocity_failure_data,
+    matching_reason, is_active
+)
+VALUES (
+    7,
+    'Standard C-41',
+    'C-41',
+    100, 400,
+    40, 0.38,
+    5500, 'daylight', '#FFB366',
+    '{}', '{}', '{}',
+    'Warm tones perfect for everyday snapshots. Great for travel, family photos, and general use.',
+    TRUE
+);
+
+-- 8. Kodak UltraMax 400
+INSERT INTO films (name, manufacturer, type, iso_base, description, tier, pdf_analyzed)
+VALUES (
+    'Kodak UltraMax 400',
+    'Kodak',
+    'color',
+    400,
+    'Consumer color negative film. Saturated colors, ideal for action and sports.',
+    'core',
+    FALSE
+);
+
+INSERT INTO film_recipes (
+    film_id, recipe_name, process_type,
+    iso_min, iso_max,
+    grain_size, grain_intensity,
+    color_temperature, white_balance, base_mask_color,
+    tone_curve_data, spectral_dye_density, reciprocity_failure_data,
+    matching_reason, is_active
+)
+VALUES (
+    8,
+    'Standard C-41',
+    'C-41',
+    200, 800,
+    42, 0.40,
+    5500, 'daylight', '#FF9966',
+    '{}', '{}', '{}',
+    'Saturated colors for action photography. Versatile ISO 400 for sports, events, and travel.',
+    TRUE
+);
+
+-- 9. Kodak Ektar 100
+INSERT INTO films (name, manufacturer, type, iso_base, description, tier, pdf_analyzed)
+VALUES (
+    'Kodak Ektar 100',
+    'Kodak',
+    'color',
+    100,
+    'World finest grain color negative film. Ultra-vivid saturation, PGI 25.',
+    'core',
+    FALSE
+);
+
+INSERT INTO film_recipes (
+    film_id, recipe_name, process_type,
+    iso_min, iso_max,
+    grain_size, grain_intensity,
+    color_temperature, white_balance, base_mask_color,
+    tone_curve_data, spectral_dye_density, reciprocity_failure_data,
+    matching_reason, is_active
+)
+VALUES (
+    9,
+    'Standard C-41',
+    'C-41',
+    50, 200,
+    25, 0.20,
+    5500, 'daylight', '#FF8844',
+    '{}', '{}', '{}',
+    'World finest grain negative film with ultra-vivid saturation. Perfect for landscape and commercial photography.',
+    TRUE
+);
+
+-- 10. Kodak Portra 160
+INSERT INTO films (name, manufacturer, type, iso_base, description, tier, pdf_analyzed)
+VALUES (
+    'Kodak Portra 160',
+    'Kodak',
+    'color',
+    160,
+    'Professional portrait film with fine grain. PGI 28, exceptional skin tones.',
+    'core',
+    FALSE
+);
+
+INSERT INTO film_recipes (
+    film_id, recipe_name, process_type,
+    iso_min, iso_max,
+    grain_size, grain_intensity,
+    color_temperature, white_balance, base_mask_color,
+    tone_curve_data, spectral_dye_density, reciprocity_failure_data,
+    matching_reason, is_active
+)
+VALUES (
+    10,
+    'Standard C-41',
+    'C-41',
+    100, 320,
+    28, 0.28,
+    5500, 'daylight', '#FF7755',
+    '{}', '{}', '{}',
+    'Finest grain Portra with exceptional skin tones. Ideal for studio portraits and fashion.',
+    TRUE
+);
+
+-- 11. Kodak ProImage 100
+INSERT INTO films (name, manufacturer, type, iso_base, description, tier, pdf_analyzed)
+VALUES (
+    'Kodak ProImage 100',
+    'Kodak',
+    'color',
+    100,
+    'Budget-friendly color negative film. Good color reproduction, affordable price.',
+    'core',
+    FALSE
+);
+
+INSERT INTO film_recipes (
+    film_id, recipe_name, process_type,
+    iso_min, iso_max,
+    grain_size, grain_intensity,
+    color_temperature, white_balance, base_mask_color,
+    tone_curve_data, spectral_dye_density, reciprocity_failure_data,
+    matching_reason, is_active
+)
+VALUES (
+    11,
+    'Standard C-41',
+    'C-41',
+    50, 200,
+    35, 0.35,
+    5500, 'daylight', '#FFAA66',
+    '{}', '{}', '{}',
+    'Affordable color negative with good color reproduction. Great for beginners and everyday use.',
+    TRUE
+);
+
+-- 12. Kodak T-Max 400
+INSERT INTO films (name, manufacturer, type, iso_base, description, tier, pdf_analyzed)
+VALUES (
+    'Kodak T-Max 400',
+    'Kodak',
+    'bw',
+    400,
+    'High-speed B&W film. T-GRAIN emulsion, push +3 stop capability.',
+    'core',
+    FALSE
+);
+
+INSERT INTO film_recipes (
+    film_id, recipe_name, process_type,
+    iso_min, iso_max,
+    grain_size, grain_intensity,
+    bw_weight_r, bw_weight_g, bw_weight_b,
+    tone_curve_data, reciprocity_failure_data,
+    matching_reason, is_active
+)
+VALUES (
+    12,
+    'T-MAX Developer',
+    'T-MAX',
+    200, 1600,
+    35, 0.30,
+    0.299, 0.587, 0.114,
+    '{}', '{"1": 1, "10": 10, "100": 100}',
+    'High-speed B&W with fine grain. Excellent for low-light, sports, and photojournalism.',
+    TRUE
+);
+
+-- 13. Rollei RPX 100
+INSERT INTO films (name, manufacturer, type, iso_base, description, tier, pdf_analyzed)
+VALUES (
+    'Rollei RPX 100',
+    'Rollei',
+    'bw',
+    100,
+    'Traditional panchromatic B&W film. Classic grain structure, affordable price.',
+    'core',
+    FALSE
+);
+
+INSERT INTO film_recipes (
+    film_id, recipe_name, process_type,
+    iso_min, iso_max,
+    grain_size, grain_intensity,
+    bw_weight_r, bw_weight_g, bw_weight_b,
+    tone_curve_data, reciprocity_failure_data,
+    matching_reason, is_active
+)
+VALUES (
+    13,
+    'Standard D-76',
+    'D-76',
+    50, 200,
+    30, 0.25,
+    0.299, 0.587, 0.114,
+    '{}', '{}',
+    'Classic panchromatic B&W with traditional grain. Great for general B&W photography.',
+    TRUE
+);

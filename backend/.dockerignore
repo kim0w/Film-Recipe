@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Testing
+tests/
+*.test.py
+pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment
+.env
+.env.local
+
+# Data (use volumes instead)
+data/temp/*
+!data/temp/.gitkeep
+
+# Database (use volumes instead)
+database/*.db-journal
+database/*.db-wal
+
+# Documentation
+*.md
+!README.md
+
+# Git
+.git
+.gitignore
+
+# Logs
+*.log
+logs/
